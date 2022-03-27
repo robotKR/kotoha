@@ -1,4 +1,3 @@
-json
 requests-oauthlib
 time
 traceback
