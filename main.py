@@ -1,11 +1,14 @@
 import json
 from requests_oauthlib import OAuth1Session
 import time
+from time import sleep
 import traceback
 import tweepy
 import requests
 import os
 import uuid
+import schedule
+
 
 consumer_key = os.environ['consumer_key']
 consumer_secret = os.environ['consumer_secret']
@@ -153,3 +156,16 @@ def main():
  
 if __name__ == "__main__":
     main()
+
+def morning():
+    Client.create_tweet(text="おはよう！")
+
+def night():
+    Client.create_tweet(text="今日もお疲れ様！おやすみ！")
+
+schedule.every().days.at("7:00").do(morning)
+schedule.every().days.at("23:00").do(night)
+
+while True:
+    schedule.run_pending()
+    sleep(1)
