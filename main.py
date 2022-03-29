@@ -4,10 +4,7 @@ import time
 from time import sleep
 import traceback
 import tweepy
-from dotenv import load_dotenv
-load_dotenv()
 import requests
-import settings
 import os
 import uuid
 import schedule
