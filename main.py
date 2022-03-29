@@ -162,8 +162,8 @@ def morning():
 def night():
     Client.create_tweet(text="今日もお疲れ様！おやすみ！")
 
-schedule.every().days.at("7:00").do(morning)
-schedule.every().days.at("23:00").do(morning)
+schedule.every().days.at("07:00").do(morning)
+schedule.every().days.at("23:00").do(night)
 
 while True:
     schedule.run_pending()
