@@ -4,11 +4,13 @@ import time
 from time import sleep
 import traceback
 import tweepy
+from dotenv import load_dotenv
+load_dotenv()
 import requests
+import settings
 import os
 import uuid
 import schedule
-
 
 consumer_key = os.environ['consumer_key']
 consumer_secret = os.environ['consumer_secret']
@@ -164,7 +166,7 @@ def night():
     Client.create_tweet(text="今日もお疲れ様！おやすみ！")
 
 schedule.every().days.at("7:00").do(morning)
-schedule.every().days.at("23:00").do(night)
+schedule.every().days.at("23:00").do(morning)
 
 while True:
     schedule.run_pending()
