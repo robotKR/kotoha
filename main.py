@@ -8,6 +8,7 @@ import requests
 import os
 import uuid
 import schedule
+import random
 
 consumer_key = os.environ['consumer_key']
 consumer_secret = os.environ['consumer_secret']
@@ -147,24 +148,44 @@ def get_stream(headers):
 class ChunkedEncodingError(Exception):
     pass
 
+def morning():
+    random = random.randint(1,5)
+    if random == 1:
+        Client.create_tweet(text="おはよう！")
+    elif random == 2:
+        Client.create_tweet(text="おっはよおおお！")
+    elif random == 3:
+        Client.create_tweet(text="朝だぞー！起きろー！")
+    elif random == 4:
+        Client.create_tweet(text="おはよ！")
+    elif random == 5:
+        Client.create_tweet(text="おはー")
+
+def night():
+    random = random.randint(1,5)
+    if random == 1:
+        Client.create_tweet(text="今日もお疲れ様！おやすみ！")
+    elif random == 2:
+        Client.create_tweet(text="おやすみ！")
+    elif random == 3:
+        Client.create_tweet(text="おやすみなさい！")
+    elif random == 4:
+        Client.create_tweet(text="おやすみー！")
+    elif random == 5:
+        Client.create_tweet(text="おやすみー")
+
 def main():
     rules = get_rules()
     delete = delete_all_rules(rules)
     set = set_rules(delete)
     get_stream(set)
+    
+    schedule.every().days.at("07:00").do(morning)
+    schedule.every().days.at("23:00").do(night)
+    
+    while True:
+        schedule.run_pending()
+        sleep(1)
  
 if __name__ == "__main__":
     main()
-
-def morning():
-    Client.create_tweet(text="おはよう！")
-
-def night():
-    Client.create_tweet(text="今日もお疲れ様！おやすみ！")
-
-schedule.every().days.at("07:00").do(morning)
-schedule.every().days.at("23:00").do(night)
-
-while True:
-    schedule.run_pending()
-    sleep(1)
