@@ -9,6 +9,7 @@ import os
 import uuid
 import schedule
 import random
+import concurrent.futures
 
 consumer_key = os.environ['consumer_key']
 consumer_secret = os.environ['consumer_secret']
@@ -84,6 +85,7 @@ def get_stream(headers):
                 "https://api.twitter.com/2/tweets/search/stream", auth=bearer_oauth, stream=True,
             ) as response:
                 print(response.status_code)
+                time.sleep(1)
                 if response.status_code != 200:
                     raise Exception(
                         "Cannot get stream (HTTP {}): {}".format(
@@ -149,6 +151,7 @@ class ChunkedEncodingError(Exception):
     pass
 
 def morning():
+    print("schedule morning done")
     random = random.randint(1,5)
     if random == 1:
         Client.create_tweet(text="おはよう！")
@@ -162,6 +165,7 @@ def morning():
         Client.create_tweet(text="おはー")
 
 def night():
+    print("schedule night done")
     random = random.randint(1,5)
     if random == 1:
         Client.create_tweet(text="今日もお疲れ様！おやすみ！")
@@ -174,18 +178,22 @@ def night():
     elif random == 5:
         Client.create_tweet(text="おやすみー")
 
+def schedule1():
+    schedule.every().days.at("09:53").do(morning)
+    schedule.every().days.at("00:22").do(night)
+    
+    while True:
+        schedule.run_pending()
+        time.sleep(1)
+        print("standby")
+
 def main():
     rules = get_rules()
     delete = delete_all_rules(rules)
     set = set_rules(delete)
-    get_stream(set)
-    
-    schedule.every().days.at("07:00").do(morning)
-    schedule.every().days.at("23:00").do(night)
-    
-    while True:
-        schedule.run_pending()
-        sleep(1)
- 
+    executor = concurrent.futures.ThreadPoolExecutor(max_workers=2)
+    executor.submit(schedule1)
+    executor.submit(get_stream(set))
+
 if __name__ == "__main__":
     main()
