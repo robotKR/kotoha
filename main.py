@@ -152,35 +152,35 @@ class ChunkedEncodingError(Exception):
 
 def morning():
     print("schedule morning done")
-    random = random.randint(1,5)
-    if random == 1:
+    random1 = random.randint(1,5)
+    if random1 == 1:
         Client.create_tweet(text="おはよう！")
-    elif random == 2:
+    elif random1 == 2:
         Client.create_tweet(text="おっはよおおお！")
-    elif random == 3:
+    elif random1 == 3:
         Client.create_tweet(text="朝だぞー！起きろー！")
-    elif random == 4:
+    elif random1 == 4:
         Client.create_tweet(text="おはよ！")
-    elif random == 5:
+    elif random1 == 5:
         Client.create_tweet(text="おはー")
 
 def night():
     print("schedule night done")
-    random = random.randint(1,5)
-    if random == 1:
+    random1 = random.randint(1,5)
+    if random1 == 1:
         Client.create_tweet(text="今日もお疲れ様！おやすみ！")
-    elif random == 2:
+    elif random1 == 2:
         Client.create_tweet(text="おやすみ！")
-    elif random == 3:
+    elif random1 == 3:
         Client.create_tweet(text="おやすみなさい！")
-    elif random == 4:
+    elif random1 == 4:
         Client.create_tweet(text="おやすみー！")
-    elif random == 5:
+    elif random1 == 5:
         Client.create_tweet(text="おやすみー")
 
 def schedule1():
-    schedule.every().days.at("09:53").do(morning)
-    schedule.every().days.at("00:22").do(night)
+    schedule.every().days.at("07:00").do(morning)
+    schedule.every().days.at("23:00").do(night)
     
     while True:
         schedule.run_pending()
