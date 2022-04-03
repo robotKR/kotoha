@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from itertools import count
 import markovify
 import tweepy
 import re
@@ -70,9 +71,10 @@ def tweet():
     text_model = markovify.Text.from_json(text_model.to_json())
     for i in range(10): #10個のつぶやき生成
         generation =  text_model.make_short_sentence(140)
-        generation=re.sub('None', "", generation)
-        print(generation)
         generation_list.append(generation)
+        generation_list = filter(None, generation_list)
+        generation_list = list(generation_list)
+        print(generation_list)
 
 if __name__ == '__main__':
     tweet()
