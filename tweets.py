@@ -5,6 +5,7 @@ import tweepy
 import re
 import MeCab
 import os
+import global_value as g
  
 def tweet():
 
@@ -24,7 +25,7 @@ def tweet():
     tweets = api.home_timeline(count=500, page=1)
     tweet_list = []
     text_list = []
-    generation_list = []
+    g.generation_list = []
 
     for tweet in tweets:
         tweet = tweet.text
@@ -71,10 +72,10 @@ def tweet():
     text_model = markovify.Text.from_json(text_model.to_json())
     for i in range(10): #10個のつぶやき生成
         generation =  text_model.make_short_sentence(140)
-        generation_list.append(generation)
-        generation_list = filter(None, generation_list)
-        generation_list = list(generation_list)
-        print(generation_list)
+        g.generation_list.append(generation)
+        g.generation_list = filter(None, g.generation_list)
+        g.generation_list = list(g.generation_list)
+        print(g.generation_list)
 
 if __name__ == '__main__':
     tweet()
