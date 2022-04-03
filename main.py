@@ -155,7 +155,8 @@ def tweet1():
     tweet.tweet()
     tweets = tweet.generation_list
     tweets = tweets[1]
-    Client.create_tweet(tweets)
+    Client.create_tweet(text=tweets)
+    print("Tweet Done")
 
 def morning():
     print("schedule morning done")
