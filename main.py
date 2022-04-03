@@ -10,6 +10,7 @@ import uuid
 import schedule
 import random
 import concurrent.futures
+import tweet
 
 consumer_key = os.environ['consumer_key']
 consumer_secret = os.environ['consumer_secret']
@@ -150,6 +151,12 @@ def get_stream(headers):
 class ChunkedEncodingError(Exception):
     pass
 
+def tweet1():
+    tweet.tweet()
+    tweets = tweet.generation_list
+    tweets = tweets[1]
+    Client.create_tweet(tweets)
+
 def morning():
     print("schedule morning done")
     random1 = random.randint(1,5)
@@ -181,6 +188,7 @@ def night():
 def schedule1():
     schedule.every().days.at("07:00").do(morning)
     schedule.every().days.at("23:00").do(night)
+    schedule.every(2).hours.do(tweet1)
     
     while True:
         schedule.run_pending()
