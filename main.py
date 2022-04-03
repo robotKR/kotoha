@@ -10,7 +10,8 @@ import uuid
 import schedule
 import random
 import concurrent.futures
-import tweet
+import tweets
+import global_value as g
 
 consumer_key = os.environ['consumer_key']
 consumer_secret = os.environ['consumer_secret']
@@ -21,8 +22,8 @@ bearer_token = os.environ['bearer_token']
 Client = tweepy.Client(bearer_token, consumer_key, consumer_secret, access_token, access_token_secret)
 hours = 2
 
-tweet.tweet()
-tweets = tweet.generation_list
+tweets.tweet()
+tweets = g.generation_list
 tweets = tweets[1]
 Client.create_tweet(text=tweets)
 print("Tweet Done")
@@ -157,8 +158,8 @@ class ChunkedEncodingError(Exception):
     pass
 
 def tweet1():
-    tweet.tweet()
-    tweets = tweet.generation_list
+    tweets.tweet()
+    tweets = g.generation_list
     tweets = tweets[1]
     Client.create_tweet(text=tweets)
     print("Tweet Done")
