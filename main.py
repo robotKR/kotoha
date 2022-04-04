@@ -8,6 +8,7 @@ import requests
 import os
 import uuid
 import schedule
+import re
 import random
 import concurrent.futures
 import tweets
@@ -23,9 +24,10 @@ Client = tweepy.Client(bearer_token, consumer_key, consumer_secret, access_token
 hours = 2
 
 tweets.tweet()
-tweets = g.generation_list
-tweets = tweets[1]
-Client.create_tweet(text=tweets)
+tweets1 = g.generation_list
+tweets1 = tweets1[1]
+tweets1 = re.sub(' ', "", tweets1)
+Client.create_tweet(text=tweets1)
 print("Tweet Done")
 
 def bearer_oauth(r):
@@ -159,9 +161,10 @@ class ChunkedEncodingError(Exception):
 
 def tweet1():
     tweets.tweet()
-    tweets = g.generation_list
-    tweets = tweets[1]
-    Client.create_tweet(text=tweets)
+    tweets1 = g.generation_list
+    tweets1 = tweets1[1]
+    tweets1 = re.sub(' ', "", tweets1)
+    Client.create_tweet(text=tweets1)
     print("Tweet Done")
 
 def morning():
