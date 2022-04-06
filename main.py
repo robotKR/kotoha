@@ -1,3 +1,4 @@
+from itertools import count
 import json
 from requests_oauthlib import OAuth1Session
 import time
@@ -21,7 +22,6 @@ access_token_secret = os.environ['access_token_secret']
 bearer_token = os.environ['bearer_token']
 
 Client = tweepy.Client(bearer_token, consumer_key, consumer_secret, access_token, access_token_secret)
-hours = 2
 
 tweets.tweet()
 tweets1 = g.generation_list
@@ -170,7 +170,6 @@ def tweet1():
 def morning():
     print("schedule morning done")
     random1 = random.randint(1,5)
-    hours = 2
     if random1 == 1:
         Client.create_tweet(text="おはよう！")
     elif random1 == 2:
@@ -185,7 +184,6 @@ def morning():
 def night():
     print("schedule night done")
     random1 = random.randint(1,5)
-    hours = 8
     if random1 == 1:
         Client.create_tweet(text="今日もお疲れ様！おやすみ！")
     elif random1 == 2:
@@ -200,7 +198,7 @@ def night():
 def schedule1():
     schedule.every().days.at("07:00").do(morning)
     schedule.every().days.at("23:00").do(night)
-    schedule.every(hours).hours.do(tweet1)
+    schedule.every(2).hours.do(tweet1)
     
     while True:
         schedule.run_pending()
