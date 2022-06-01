@@ -197,6 +197,7 @@ def night():
 
 def schedule1():
     schedule.every().days.at("07:00").do(morning)
+    schedule.every().days.at("06:00").do(main)
     schedule.every().days.at("23:00").do(night)
     schedule.every(2).hours.do(tweet1)
     
