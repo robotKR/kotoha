@@ -4,7 +4,7 @@ import openai
 import chardet
 import re
 
-os.environ["OPENAI_API_KEY"] = "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"
+os.environ["OPENAI_API_KEY"] = ""
 
 Emosion = ""
 Animesion = "1"
