@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-06-18T14:25:28.027Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="rXK9K2lLwR1o1Zm50Rms" version="24.5.4" type="github" pages="2">
+<mxfile host="app.diagrams.net" modified="2024-07-13T14:15:20.721Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="-K_NTGoXLjql65-j1Kg4" version="24.6.4" type="github" pages="3">
   <diagram name="Speech" id="vcsxD4Wo8bOV1PizezcE">
     <mxGraphModel dx="1969" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -121,6 +121,55 @@
         </mxCell>
         <mxCell id="qmHcqvEJqrWSR2z9JQs2-12" value="for n in [1,2,3]" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="354" y="820" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="dUv8Plvf9HJEkUTyJGUo" name="ページ3">
+    <mxGraphModel dx="2395" dy="1536" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-3" value="マルチモーダルLLMへ音声を入力" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1140.25" y="-31" width="239.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-25" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WzbpWg14ONXl1xEjjAZF-20" target="WzbpWg14ONXl1xEjjAZF-24">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-20" value="録音" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1080.5" y="-260" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-22" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WzbpWg14ONXl1xEjjAZF-21" target="WzbpWg14ONXl1xEjjAZF-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-21" value="マイクからの入力があるか？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1160" y="-420" width="280" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-26" style="edgeStyle=none;curved=1;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;fontSize=12;startSize=8;endSize=8;" edge="1" parent="1" source="WzbpWg14ONXl1xEjjAZF-24" target="WzbpWg14ONXl1xEjjAZF-3">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-28" value="No" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="WzbpWg14ONXl1xEjjAZF-26">
+          <mxGeometry x="-0.3084" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-29" style="edgeStyle=none;curved=0;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=12;startSize=8;endSize=8;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="WzbpWg14ONXl1xEjjAZF-24" target="WzbpWg14ONXl1xEjjAZF-20">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="-760" y="-120" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-820" y="-120" />
+              <mxPoint x="-770" y="-120" />
+              <mxPoint x="-770" y="-230" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-30" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];fontSize=12;" vertex="1" connectable="0" parent="WzbpWg14ONXl1xEjjAZF-29">
+          <mxGeometry x="-0.7543" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="WzbpWg14ONXl1xEjjAZF-24" value="マイクからの入力があるか？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="-1160.5" y="-160" width="280" height="80" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
