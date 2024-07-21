@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-21T11:44:32.322Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="gOTsrxt7f9c72IUYiBRw" version="24.7.2" type="github" pages="6">
+<mxfile host="app.diagrams.net" modified="2024-07-21T11:56:20.535Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="RytXs_vGuMWcrTPOtKcX" version="24.7.2" type="github" pages="6">
   <diagram name="Speech" id="vcsxD4Wo8bOV1PizezcE">
     <mxGraphModel dx="1969" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -364,7 +364,7 @@
     </mxGraphModel>
   </diagram>
   <diagram id="pkEydSPtBFDU4O3YSS5K" name="ページ6">
-    <mxGraphModel dx="1366" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1593" dy="926" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
@@ -390,7 +390,7 @@
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="vGRzhO_-SIjfn4DepLIU-6" value="main:Serverをスレッドで実行" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="322" y="80" width="184" height="60" as="geometry" />
+          <mxGeometry x="321" y="80" width="184" height="60" as="geometry" />
         </mxCell>
         <mxCell id="vGRzhO_-SIjfn4DepLIU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-11" target="vGRzhO_-SIjfn4DepLIU-13">
           <mxGeometry relative="1" as="geometry" />
@@ -422,8 +422,16 @@
         <mxCell id="vGRzhO_-SIjfn4DepLIU-20" value="main:文字起こしを受信。LLMへ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="306" y="980" width="214" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="vGRzhO_-SIjfn4DepLIU-22" value="main:処理完了後、" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="354" y="1100" width="120" height="60" as="geometry" />
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-22" target="vGRzhO_-SIjfn4DepLIU-2">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="110" y="1120" />
+              <mxPoint x="110" y="555" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-22" value="main:処理完了&lt;span style=&quot;text-wrap: nowrap; font-size: 11px; background-color: rgb(255, 255, 255);&quot;&gt;&lt;br&gt;&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282" y="1090" width="264" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
