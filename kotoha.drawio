@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" modified="2024-07-16T14:26:41.153Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="UdygK6wN7Ln21MYyJ6TY" version="24.6.5" type="github" pages="5">
+<mxfile host="app.diagrams.net" modified="2024-07-21T11:44:32.322Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/126.0.0.0 Safari/537.36" etag="gOTsrxt7f9c72IUYiBRw" version="24.7.2" type="github" pages="6">
   <diagram name="Speech" id="vcsxD4Wo8bOV1PizezcE">
     <mxGraphModel dx="1969" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -359,6 +359,71 @@
         </mxCell>
         <mxCell id="-ZD21GH6FCY3VDRtaUfw-4" value="" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
           <mxGeometry x="330" y="330" width="120" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+  <diagram id="pkEydSPtBFDU4O3YSS5K" name="ページ6">
+    <mxGraphModel dx="1366" dy="793" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-12" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-1" target="vGRzhO_-SIjfn4DepLIU-11">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-1" value="Server:ソケット通信のセットアップ&lt;br&gt;main(client):ソケット通信のセットアップ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="306" y="190" width="216" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-5" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-2" target="vGRzhO_-SIjfn4DepLIU-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-2" value="main:Serverへ&lt;span style=&quot;font-size: 11px; text-wrap: nowrap; background-color: rgb(255, 255, 255);&quot;&gt;InputAudioの実行を指令&lt;br&gt;main:文字起こしが受信されるまで待機。&lt;/span&gt;" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="296.375" y="524.5" width="235.25" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-17" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-4" target="vGRzhO_-SIjfn4DepLIU-16">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-4" value="Server:InputAudioの実行。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="327" y="650" width="174" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-7" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-6" target="vGRzhO_-SIjfn4DepLIU-1">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-6" value="main:Serverをスレッドで実行" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="322" y="80" width="184" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-11" target="vGRzhO_-SIjfn4DepLIU-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-11" value="Server:ソケット通信のセットアップの完了" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="297.5" y="300" width="233" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-13" target="vGRzhO_-SIjfn4DepLIU-2">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-13" value="main(client):Serverが準備完了次第接続" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="298.75" y="410" width="230.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-19" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-16" target="vGRzhO_-SIjfn4DepLIU-18">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-16" value="InputAudio:文字起こしを行い、Serverへ送信" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="287" y="760" width="254" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-21" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-18" target="vGRzhO_-SIjfn4DepLIU-20">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-18" value="Server:mainへ文字起こしを送信" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="317" y="870" width="194" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-23" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="vGRzhO_-SIjfn4DepLIU-20" target="vGRzhO_-SIjfn4DepLIU-22">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-20" value="main:文字起こしを受信。LLMへ" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="306" y="980" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="vGRzhO_-SIjfn4DepLIU-22" value="main:処理完了後、" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="1100" width="120" height="60" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
