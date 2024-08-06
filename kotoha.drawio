@@ -1,4 +1,4 @@
-<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.5" pages="9">
+<mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/127.0.0.0 Safari/537.36" version="24.7.6" pages="9">
   <diagram name="Speech" id="vcsxD4Wo8bOV1PizezcE">
     <mxGraphModel dx="1969" dy="868" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
@@ -540,10 +540,43 @@
     </mxGraphModel>
   </diagram>
   <diagram id="nX11HHPg5AaotFop5O_w" name="ページ9">
-    <mxGraphModel grid="1" page="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
+    <mxGraphModel dx="1405" dy="945" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="VqedavaQHlqCCWVEP96K-14" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VqedavaQHlqCCWVEP96K-1" target="VqedavaQHlqCCWVEP96K-13">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-1" value="Python:&lt;br&gt;生成した文字列&lt;br&gt;生成した行動(モーション、表情)" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307" y="120" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-11" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VqedavaQHlqCCWVEP96K-4" target="VqedavaQHlqCCWVEP96K-9">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-4" value="Unity(PyCOM):受信" style="whiteSpace=wrap;html=1;rounded=1;" vertex="1" parent="1">
+          <mxGeometry x="354" y="340" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-16" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VqedavaQHlqCCWVEP96K-9" target="VqedavaQHlqCCWVEP96K-12">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-9" value="Unity(PyCOM):受信データAnimation:と書いてあるか？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="237" y="450" width="354" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-18" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="VqedavaQHlqCCWVEP96K-12" target="VqedavaQHlqCCWVEP96K-17">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-12" value="Unity(PyCOM):Animation部分を削除して内容を返す" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="272" y="584.5" width="284" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-15" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" edge="1" parent="1" source="VqedavaQHlqCCWVEP96K-13" target="VqedavaQHlqCCWVEP96K-4">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-13" value="Unity(main):PyCOMを呼び出し。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="307" y="230" width="214" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="VqedavaQHlqCCWVEP96K-17" value="Unity(main):ChangeAnimationを呼び出し。" style="rounded=1;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="282" y="700" width="264" height="60" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
