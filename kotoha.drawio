@@ -585,55 +585,55 @@
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="Qs9nficL1l8N5JD7LazW-1" target="CaQAGBqOfyq5o5kahjhi-6">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-7" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="Qs9nficL1l8N5JD7LazW-1" target="CaQAGBqOfyq5o5kahjhi-6" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
         <mxCell id="Qs9nficL1l8N5JD7LazW-1" value="表情、モーション&lt;br&gt;それぞれを抽出" style="rounded=1;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="310" y="40" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-2" value="Function:FaceChanger" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-2" value="Function:FaceChanger" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="120" y="460" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-19" value="" style="whiteSpace=wrap;html=1;" vertex="1" parent="CaQAGBqOfyq5o5kahjhi-2">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-19" value="表情名、設定値" style="whiteSpace=wrap;html=1;" parent="CaQAGBqOfyq5o5kahjhi-2" vertex="1">
           <mxGeometry x="40" y="50" width="120" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-3" value="Function:MotionChenger" style="swimlane;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-3" value="Function:MotionChenger" style="swimlane;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="420" y="460" width="200" height="200" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CaQAGBqOfyq5o5kahjhi-6" target="CaQAGBqOfyq5o5kahjhi-8">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-9" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="CaQAGBqOfyq5o5kahjhi-6" target="CaQAGBqOfyq5o5kahjhi-8" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-10" value="else if" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CaQAGBqOfyq5o5kahjhi-9">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-10" value="else if" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CaQAGBqOfyq5o5kahjhi-9" vertex="1" connectable="0">
           <mxGeometry x="-0.2833" y="-1" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CaQAGBqOfyq5o5kahjhi-6" target="CaQAGBqOfyq5o5kahjhi-13">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-14" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="CaQAGBqOfyq5o5kahjhi-6" target="CaQAGBqOfyq5o5kahjhi-13" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-17" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CaQAGBqOfyq5o5kahjhi-14">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-17" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CaQAGBqOfyq5o5kahjhi-14" vertex="1" connectable="0">
           <mxGeometry x="-0.4697" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-6" value="表情が変更されているか？" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-6" value="表情が変更されているか？" style="rhombus;whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="270" y="160" width="200" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" edge="1" parent="1" source="CaQAGBqOfyq5o5kahjhi-8" target="CaQAGBqOfyq5o5kahjhi-15">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-16" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;" parent="1" source="CaQAGBqOfyq5o5kahjhi-8" target="CaQAGBqOfyq5o5kahjhi-15" edge="1">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-18" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="CaQAGBqOfyq5o5kahjhi-16">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-18" value="Yes" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" parent="CaQAGBqOfyq5o5kahjhi-16" vertex="1" connectable="0">
           <mxGeometry x="-0.2145" y="2" relative="1" as="geometry">
             <mxPoint as="offset" />
           </mxGeometry>
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-8" value="モーションが変更されているか？" style="rhombus;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-8" value="モーションが変更されているか？" style="rhombus;whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="260" y="280" width="220" height="80" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-13" value="FaceChenger呼び出し" style="whiteSpace=wrap;html=1;rounded=0;" vertex="1" parent="1">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-13" value="FaceChenger呼び出し" style="whiteSpace=wrap;html=1;rounded=0;" parent="1" vertex="1">
           <mxGeometry x="570" y="170" width="140" height="60" as="geometry" />
         </mxCell>
-        <mxCell id="CaQAGBqOfyq5o5kahjhi-15" value="MotionChenger呼び出し" style="whiteSpace=wrap;html=1;" vertex="1" parent="1">
+        <mxCell id="CaQAGBqOfyq5o5kahjhi-15" value="MotionChenger呼び出し" style="whiteSpace=wrap;html=1;" parent="1" vertex="1">
           <mxGeometry x="580" y="290" width="150" height="60" as="geometry" />
         </mxCell>
       </root>
